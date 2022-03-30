@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>forms.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #ed864a;}
+.s1 { color: #ebebeb;}
+.s2 { color: #ffffff;}
+.s3 { color: #54b33e;}
+.s4 { color: #ed864a; font-weight: bold;}
+.s5 { color: #33ccff; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#131314">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+forms.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!doctype </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;viewport&quot;</span>
+          <span class="s2">content</span><span class="s3">=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">http-equiv</span><span class="s3">=&quot;X-UA-Compatible&quot; </span><span class="s2">content</span><span class="s3">=&quot;ie=edge&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;title&gt;</span><span class="s1">Forms</span><span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;style&gt;</span>
+        <span class="s0">#fname</span><span class="s1">{</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">lime</span><span class="s4">;</span>
+            <span class="s2">border-color</span><span class="s1">: </span><span class="s3">maroon</span><span class="s4">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s4">;</span>
+            <span class="s2">text-decoration-color</span><span class="s1">: </span><span class="s3">mediumblue</span><span class="s4">;</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s3">red</span><span class="s4">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#sname</span><span class="s1">{</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">navy</span><span class="s4">;</span>
+            <span class="s2">border-color</span><span class="s1">: </span><span class="s3">black</span><span class="s4">;</span>
+            <span class="s2">text-decoration</span><span class="s1">: </span><span class="s3">royalblue</span><span class="s4">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s4">;</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s3">lime</span><span class="s4">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#email</span><span class="s1">{</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">black</span><span class="s4">;</span>
+            <span class="s2">border-color</span><span class="s1">: </span><span class="s3">purple</span><span class="s4">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s4">;</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s3">maroon</span><span class="s4">;</span>
+            <span class="s2">text-decoration</span><span class="s1">: </span><span class="s3">gold</span><span class="s4">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#dob</span><span class="s1">{</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">darkviolet</span><span class="s4">;</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s3">yellowgreen</span><span class="s4">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s4">;</span>
+        <span class="s1">}</span>
+        <span class="s0">#text area</span><span class="s1">{</span>
+            <span class="s2">padding</span><span class="s1">: </span><span class="s5">30</span><span class="s3">px</span><span class="s4">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">left</span><span class="s4">;</span>
+            <span class="s2">margin</span><span class="s1">: </span><span class="s5">20</span><span class="s3">px</span><span class="s4">;</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s3">yellowgreen</span><span class="s4">;</span>
+        <span class="s1">}</span>
+        <span class="s0">h2</span><span class="s1">{</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s4">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s3">blue</span><span class="s4">;</span>
+
+        <span class="s1">}</span>
+        <span class="s0">body</span><span class="s1">{</span>
+            <span class="s2">background-image</span><span class="s1">: </span><span class="s0">url</span><span class="s1">(</span><span class="s3">&quot;images/image5.jpeg&quot;</span><span class="s1">)</span><span class="s4">;</span>
+        <span class="s1">}</span>
+    <span class="s0">&lt;/style&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+<span class="s0">&lt;h2&gt;</span><span class="s1">Emobilis Students Registration Forms</span><span class="s0">&lt;/h2&gt;</span>
+<span class="s0">&lt;form&gt;</span>
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;fname&quot;</span><span class="s0">&gt;</span><span class="s1">First Name</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;text&quot;</span><span class="s2">id</span><span class="s3">=&quot;fname&quot;</span><span class="s2">placeholder</span><span class="s3">=&quot;Enter First Name&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;sname&quot;</span><span class="s0">&gt;</span><span class="s1">Last Name</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;text&quot;</span><span class="s2">id</span><span class="s3">=&quot;sname&quot;</span><span class="s2">placeholder</span><span class="s3">=&quot;Enter Last Name&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;male&quot;</span><span class="s0">&gt;</span><span class="s1">Male</span><span class="s0">&lt;/label&gt;</span>
+    <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;radio&quot;</span><span class="s2">id</span><span class="s3">=&quot;male&quot; </span><span class="s2">name</span><span class="s3">=&quot;gender&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;female&quot;</span><span class="s0">&gt;</span><span class="s1">Female</span><span class="s0">&lt;/label&gt;</span>
+    <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;radio&quot;</span><span class="s2">id</span><span class="s3">=&quot;female&quot; </span><span class="s2">name</span><span class="s3">=&quot;gender&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;email&quot;</span><span class="s0">&gt;</span><span class="s1">Email Address</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;email&quot;</span><span class="s2">id</span><span class="s3">=&quot;email&quot;</span><span class="s2">placeholder</span><span class="s3">=&quot;Enter Email Address&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;password&quot;</span><span class="s0">&gt;</span><span class="s1">Password</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;text&quot;</span><span class="s2">id</span><span class="s3">=&quot;password&quot;</span><span class="s2">placeholder</span><span class="s3">=&quot;Enter Password&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;dob&quot;</span><span class="s0">&gt;</span><span class="s1">Date Of Birth</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;date&quot;</span><span class="s2">id</span><span class="s3">=&quot;dob&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;courses&quot;</span><span class="s0">&gt;</span><span class="s1">Courses</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;select </span><span class="s2">name</span><span class="s3">=&quot;courses&quot; </span><span class="s2">id</span><span class="s3">=&quot;courses&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;mit&quot;</span><span class="s0">&gt;</span><span class="s1">MIT</span><span class="s0">&lt;/option&gt;</span>
+        <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;python&quot;</span><span class="s0">&gt;</span><span class="s1">Python</span><span class="s0">&lt;/option&gt;</span>
+        <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;java script&quot;</span><span class="s0">&gt;</span><span class="s1">Java Script</span><span class="s0">&lt;/option&gt;</span>
+        <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;laravel&quot;</span><span class="s0">&gt;</span><span class="s1">Laravel</span><span class="s0">&lt;/option&gt;</span>
+    <span class="s0">&lt;/select&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;messages&quot;</span><span class="s0">&gt;</span><span class="s1">Messages</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;textarea </span><span class="s2">name</span><span class="s3">=&quot;messages&quot; </span><span class="s2">id</span><span class="s3">=&quot;messages&quot; </span><span class="s2">cols</span><span class="s3">=&quot;30&quot; </span><span class="s2">rows</span><span class="s3">=&quot;10&quot;</span><span class="s2">placeholder</span><span class="s3">=&quot;comment&quot;</span><span class="s0">&gt;&lt;/textarea&gt;&lt;br&gt;</span>
+
+    <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;checkbox&quot;</span><span class="s0">&gt;</span><span class="s1">Checkbox</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+    <span class="s0">&lt;select </span><span class="s2">name</span><span class="s3">=&quot;&quot; </span><span class="s2">id</span><span class="s3">=&quot;&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;yes&quot;</span><span class="s0">&gt;</span><span class="s1">YES</span><span class="s0">&lt;/option&gt;</span>
+        <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;no&quot;</span><span class="s0">&gt;</span><span class="s1">NO</span><span class="s0">&lt;/option&gt;</span>
+    <span class="s0">&lt;/select&gt;&lt;br&gt;</span>
+
+    <span class="s0">&lt;button </span><span class="s2">type</span><span class="s3">=&quot;submit&quot;</span><span class="s2">onclick</span><span class="s3">=&quot;</span><span class="s1">alert(Bonyeza)</span><span class="s3">&quot;</span><span class="s0">&gt;</span><span class="s1">click me</span><span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;br&gt;</span>
+ <span class="s0">&lt;h2&gt;</span><span class="s1">Fieldset</span><span class="s0">&lt;/h2&gt;</span>
+    <span class="s0">&lt;form </span><span class="s2">action</span><span class="s3">=&quot;/php&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;fieldset&gt;</span>
+            <span class="s0">&lt;legend&gt;</span><span class="s1">FAMILIA</span><span class="s0">&lt;/legend&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;fname&quot;</span><span class="s0">&gt;</span><span class="s1">First Name</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+            <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;text&quot;</span><span class="s2">id</span><span class="s3">=&quot;fname&quot;</span><span class="s2">value</span><span class="s3">=&quot;Peter&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+            <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;lname&quot;</span><span class="s0">&gt;</span><span class="s1">Last Name</span><span class="s0">&lt;/label&gt;&lt;br&gt;</span>
+            <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;text&quot;</span><span class="s2">id</span><span class="s3">=&quot;lname&quot;</span><span class="s2">value</span><span class="s3">=&quot;Kariuki&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+        <span class="s0">&lt;/fieldset&gt;</span>
+    <span class="s0">&lt;/form&gt;</span>
+    <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;submit&quot;</span><span class="s2">value</span><span class="s3">=&quot;Register here&quot;</span><span class="s0">&gt;&lt;br&gt;</span>
+
+
+
+    
+<span class="s0">&lt;/form&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span></pre>
+</body>
+</html>

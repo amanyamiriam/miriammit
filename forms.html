@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <style>
+        #fname{
+            color: lime;
+            border-color: maroon;
+            text-align: center;
+            text-decoration-color: mediumblue;
+            background-color: red;
+        }
+        #sname{
+            color: navy;
+            border-color: black;
+            text-decoration: royalblue;
+            text-align: center;
+            background-color: lime;
+        }
+        #email{
+            color: black;
+            border-color: purple;
+            text-align: center;
+            background-color: maroon;
+            text-decoration: gold;
+        }
+        #dob{
+            color: darkviolet;
+            background-color: yellowgreen;
+            text-align: center;
+        }
+        #text area{
+            padding: 30px;
+            text-align: left;
+            margin: 20px;
+            background-color: yellowgreen;
+        }
+        h2{
+            text-align: center;
+            color: blue;
+
+        }
+        body{
+            background-image: url("images/image5.jpeg");
+        }
+    </style>
+</head>
+<body>
+<h2>Emobilis Students Registration Forms</h2>
+<form>
+    <label for="fname">First Name</label><br>
+    <input type="text"id="fname"placeholder="Enter First Name"><br>
+
+    <label for="sname">Last Name</label><br>
+    <input type="text"id="sname"placeholder="Enter Last Name"><br>
+
+    <label for="male">Male</label>
+    <input type="radio"id="male" name="gender"><br>
+    <label for="female">Female</label>
+    <input type="radio"id="female" name="gender"><br>
+
+    <label for="email">Email Address</label><br>
+    <input type="email"id="email"placeholder="Enter Email Address"><br>
+
+    <label for="password">Password</label><br>
+    <input type="text"id="password"placeholder="Enter Password"><br>
+    <label for="dob">Date Of Birth</label><br>
+    <input type="date"id="dob"><br>
+
+    <label for="courses">Courses</label><br>
+    <select name="courses" id="courses">
+        <option value="mit">MIT</option>
+        <option value="python">Python</option>
+        <option value="java script">Java Script</option>
+        <option value="laravel">Laravel</option>
+    </select><br>
+    <label for="messages">Messages</label><br>
+    <textarea name="messages" id="messages" cols="30" rows="10"placeholder="comment"></textarea><br>
+
+    <label for="checkbox">Checkbox</label><br>
+    <select name="" id="">
+        <option value="yes">YES</option>
+        <option value="no">NO</option>
+    </select><br>
+
+    <button type="submit"onclick="alert(Bonyeza)">click me</button>
+    <br>
+ <h2>Fieldset</h2>
+    <form action="/php">
+        <fieldset>
+            <legend>FAMILIA</legend>
+            <br>
+            <label for="fname">First Name</label><br>
+            <input type="text"id="fname"value="Peter"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text"id="lname"value="Kariuki"><br>
+        </fieldset>
+    </form>
+    <input type="submit"value="Register here"><br>
+
+
+
+
+</form>
+</body>
+</html>
